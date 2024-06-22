@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/logo@2x.png" type="image/x-icon" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+  <body>
+    <!-- !start navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="img">
+              <img src="image/logo@2x.png" alt="logo Weather" class="w-100" />
+            </div>
+            <div class="ps-3 align-items-center">
+              <h1 class="text-white mb-1">Weather</h1>
+              <p class="text-white-50">tagline goes here</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- !end navbar -->
+    <!-- *start search -->
+    <section id="searchs">
+      <div class="hero">
+        <div class="container">
+          <form class="find-location">
+            <input
+              type="text"
+              placeholder="Find your location..."
+              id="search"
+            />
+            <input type="button" value="Find" id="submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- *end search -->
+    <!-- ?start table  -->
+    <section id="table">
+      <div class="container">
+        <div class="row justify-content-center gx-0 gy-3 all">
+          <div class="col-md-4">
+            <div class="box pb-2" id="current-weather"></div>
+          </div>
+          <div class="col-md-4 middle">
+            <div class="box pb-2 text-center " id="forecast-day-1"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="box pb-2 text-center" id="forecast-day-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ?end table  -->
+    <!-- !start footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <form class="find-location my-2">
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+                id="subscribe-email"
+              />
+              <input type="button" value="subscribe" id="subscribe-btn" />
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="social my-2">
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-white-50 my-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- !end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
